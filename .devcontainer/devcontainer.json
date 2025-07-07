@@ -1,0 +1,40 @@
+{
+    "name": "cloud-run-job-migration-test",
+    "build": { "dockerfile": "./Dockerfile.dev" },
+    "appPort": 3306,
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "charliermarsh.ruff",
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.ruff": "explicit",
+                        "source.organizeImports.ruff": "explicit"
+                    }
+                },
+                "ruff.lint.run": "onSave",
+                "notebook.defaultFormatter": "charliermarsh.ruff",
+                "notebook.formatOnCellExecution": true,
+                "notebook.formatOnSave.enabled": true,
+                "python.languageServer": "Pylance",
+                "python.analysis.diagnosticSeverityOverrides": {
+                    "reportMissingImports": "warning"
+                },
+                "python.testing.pytestEnabled": true,
+                "autoDocstring.docstringFormat": "google",
+                "editor.renderWhitespace": "all",
+                "files.trimTrailingWhitespace": true,
+                "files.insertFinalNewline": true,
+                "markdown.marp.enableHtml": true
+            },
+            "extensions": [
+                "charliermarsh.ruff",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "njpwerner.autodocstring",
+                "marp-team.marp-vscode"
+            ]
+        }
+    }
+}

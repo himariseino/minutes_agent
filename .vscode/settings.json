@@ -1,0 +1,32 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
+    },
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "warning"
+    },
+    "python.analysis.extraPaths": [
+        ".venv/lib/python3.12/site-packages",
+    ],
+    "python.languageServer": "Pylance",
+    "python.testing.pytestEnabled": true,
+
+    "notebook.defaultFormatter": "charliermarsh.ruff",
+    "notebook.formatOnCellExecution": true,
+    "notebook.formatOnSave.enabled": true,
+
+    "ruff.lint.run": "onSave",
+
+    "autoDocstring.docstringFormat": "google",
+
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    "markdown.marp.enableHtml": true
+}

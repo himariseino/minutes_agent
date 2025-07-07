@@ -1,0 +1,51 @@
+[project]
+name = "template-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.12.0"
+dependencies = []
+packages = [
+    { include = "app", from = "." },
+]
+
+[dependency-groups]
+dev = [
+    "dash>=2.18.2",
+    "dash-bootstrap-components>=1.7.1",
+    "ipykernel>=6.29.5",
+    "mypy>=1.14.1",
+    "nbformat>=5.10.4",
+    "plotly>=5.24.1",
+    "pre-commit>=4.1.0",
+    "pydantic>=2.10.6",
+    "pytest>=8.3.4",
+    "ruff>=0.9.3",
+    "tqdm>=4.67.1",
+]
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/stable/config_file.html
+exclude = []
+explicit_package_bases = true
+ignore_missing_imports = true
+
+[tool.ruff]
+extend-exclude = []
+line-length = 120
+
+[tool.ruff.lint]
+extend-ignore = [
+    "D100",
+    "D104",
+]
+select = [
+    # https://docs.astral.sh/ruff/rules/
+    "D",
+    "E",
+    "F",
+    "I",
+    "PD",
+    "RUF",
+    "W",
+]

@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+      "bierner.markdown-mermaid",
+      "charliermarsh.ruff",
+      "eamodio.gitlens",
+      "elagil.pre-commit-helper",
+      "GitHub.copilot",
+      "marp-team.marp-vscode",
+      "mhutchie.git-graph",
+      "ms-python.mypy-type-checker",
+      "ms-python.python",
+      "ms-vscode-remote.remote-containers",
+      "ms-vsliveshare.vsliveshare",
+      "njpwerner.autodocstring",
+      "sclu1034.justfile",
+      "tamasfe.even-better-toml",
+    ]
+}
