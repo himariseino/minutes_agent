@@ -12,9 +12,10 @@ src/data/raw/
 src/data/*.csv
 src/data/*.md
 src/data/*.ipynb
+src/data/*.m4a
 
 # outputs
-# outputs/data/
+outputs/data/*.txt
 # outputs/deck/
 # outputs/models/
 # Byte-compiled / optimized / DLL files

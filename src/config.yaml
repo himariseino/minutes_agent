@@ -1,0 +1,25 @@
+VOICE_PATH: "/Users/seinohimari/Development/minutes_agent/src/data/20250630_voice_memo.m4a"
+VOICE_MODEL_NAME: "whisper-1"
+SUMMARIZE_MODEL_NAME: "gpt-4.1-mini"
+
+OUTPUT_PATH: "/Users/seinohimari/Development/minutes_agent/outputs/data"
+
+system:
+  prompt: |
+    # あなたの役割
+    あなたは、優秀な新卒です。
+    # 指示
+    - 提供された文字起こしを読んで理解してください。
+    - 理解したことをもとに、議事録を書いてください。
+    - 議事録には以下の内容を含めてください
+      - 会議概要
+      - 主な議題
+      - 各議題に対する議論内容
+      - 次回検討事項
+    # 背景情報
+    - 話者が複数人いる場合があります。それは、それぞれの話題を報告をしているためです。
+
+user:
+  prompt: |
+    # 会議の文字起こし
+    {user_input}
